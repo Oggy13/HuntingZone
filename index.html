@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamingwala</title>
+    <link rel="stylesheet" href="first.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+     <header>
+        <a href="#" class="logo">Hunting Zone</a>
+        <ul class="nav">
+            <li><a href="Home">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Tournaments</a></li>
+            <li><a href="Contact">Contact</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class='bx bx-search-alt' ></i></a>
+                <input type="text" placeholder="Search Games">
+            </div>
+        </div>
+        
+     </header>
+
+     <!--Home Banner-->
+     <div class="banner" id="Home">
+        <div class="bg">
+            <div class="content">
+                <h2>A New Home For<br>
+                    Game Lovers</h2>
+                 <p>We invite you to explore My Gaming Website, connect with fellow gamers, and make the most of our resources. Whether you're looking for the latest game releases, in-depth analysis, or simply a place to share your passion for gaming, you'll find it all here. Join us today and become a part of our thriving gaming community.</p>
+                 <a href="#" class="btn">Join Now</a>   
+            </div>
+            <img src="boss.png">
+        </div>
+     </div>
+
+     <!--About-->
+     <div class="about" id="about">
+        <div class="contentBx">
+            <h2>About us</h2>
+            <p>
+                Welcome to My Gaming Website,
+                My Gaming Website is a dedicated platform for gaming enthusiasts. We're passionate about providing a space where gamers from all around the world can come together to explore, connect, and enjoy the exciting world of video games.
+                Our mission is to offer a hub for gamers of all levels and backgrounds. Whether you're a casual player, a competitive e-sports enthusiast, or a game developer, we're here to cater to your interests. We aim to provide a platform where you can find the latest gaming news, discover new games, and connect with like-minded individuals.
+            </p>
+            <a href="#">Read more</a>
+        </div>
+        <img src="spidy.png" class="image">
+     </div>
+
+     <!--Contact-->
+     <div class="contact" id="contact">
+        <img src="contact.jpg">
+        <div class="form">
+            <h1>Contact us</h1>
+            <div class="inputBx">
+                <p>Enter Name</p>
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="inputBx">
+                <p>Enter Email</p>
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBx">
+                <p>Message</p>
+                <textarea placeholder="Type here....."></textarea>
+            </div>
+            <div class="inputBx">
+                <input type="submit" placeholder="Submit">
+            </div>
+        </div>
+     </div>
+
+    <!--footer-->
+    <footer>
+        <div class="info">
+            <a href="#" class="logo">Hunting Zone</a>
+            <p><i class='bx bxs-copyright'></i> 2023 All Rights Reserved</p>
+            <ul>
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+     <script>
+        /*Sticky NavBar*/
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0)
+        });
+     </script>
+</body>
+</html>
